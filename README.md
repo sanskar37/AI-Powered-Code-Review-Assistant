@@ -135,7 +135,7 @@ This helps developers prioritize fixes quickly.
 ---
 
 ## 📁 Project Structure
-
+```text
 ai-code-review-assistant/
 │
 ├── app/
@@ -151,7 +151,7 @@ ai-code-review-assistant/
 ├── docker/
 ├── README.md
 └── requirements.txt
-
+```
 
 ---
 
@@ -164,10 +164,24 @@ ai-code-review-assistant/
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/your-username/ai-code-review-assistant.git
-cd ai-code-review-assistant
+git clone https://github.com/sanskar37/ai-powered-code-review-assistant.git
+cd ai-powered-code-review-assistant
+```
+### Install Dependencies
+```bash
+pip install -r requirements.txt
 ```
 
+### Configure Environment Variables
+```bash
+export GITHUB_TOKEN=your_github_token
+export LLM_API_KEY=your_llm_api_key
+```
+
+### Run Backend
+```bash
+uvicorn app.main:app --reload
+```
 
 ## 📈 Performance & Scalability
 - Handles multiple PRs concurrently
